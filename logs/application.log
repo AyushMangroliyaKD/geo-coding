@@ -1,0 +1,20 @@
+2025-02-26 15:12:50.059  INFO 12096 --- [main] com.caching.ApiApplication               : Starting ApiApplication using Java 17.0.13 on DESKTOP-0IMO593 with PID 12096 (C:\Users\Admin\Desktop\2\target\classes started by Admin in C:\Users\Admin\Desktop\2)
+2025-02-26 15:12:50.065  INFO 12096 --- [main] com.caching.ApiApplication               : No active profile set, falling back to 1 default profile: "default"
+2025-02-26 15:12:51.080  INFO 12096 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2025-02-26 15:12:51.090  INFO 12096 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-26 15:12:51.090  INFO 12096 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2025-02-26 15:12:51.162  INFO 12096 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-26 15:12:51.162  INFO 12096 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1035 ms
+2025-02-26 15:12:51.481  INFO 12096 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2025-02-26 15:12:51.490  INFO 12096 --- [main] com.caching.ApiApplication               : Started ApiApplication in 2.027 seconds (JVM running for 2.841)
+2025-02-26 15:12:51.495  INFO 12096 --- [scheduling-1] com.caching.service.APIService           : Reverse geocoding cache cleared.
+2025-02-26 15:12:51.495  INFO 12096 --- [scheduling-1] com.caching.service.APIService           : Geocoding cache cleared.
+2025-02-26 15:13:30.609  INFO 12096 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-26 15:13:30.610  INFO 12096 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-26 15:13:30.610  INFO 12096 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-02-26 15:13:30.658  INFO 12096 --- [http-nio-8080-exec-1] com.caching.service.APIService           : Attempting to get forward geocoding for address: bangalore
+2025-02-26 15:13:31.436  INFO 12096 --- [http-nio-8080-exec-1] com.caching.service.APIService           : Successfully fetched geocoding data for address: bangalore
+2025-02-26 15:13:42.051  INFO 12096 --- [http-nio-8080-exec-3] com.caching.service.APIService           : Attempting to get reverse geocoding for coordinates: 37.431155, -120.781462
+2025-02-26 15:13:44.760  INFO 12096 --- [http-nio-8080-exec-3] com.caching.service.APIService           : Successfully fetched reverse geocoding data for coordinates: 37.431155, -120.781462
+2025-02-26 15:13:51.501  INFO 12096 --- [scheduling-1] com.caching.service.APIService           : Reverse geocoding cache cleared.
+2025-02-26 15:13:51.503  INFO 12096 --- [scheduling-1] com.caching.service.APIService           : Geocoding cache cleared.
