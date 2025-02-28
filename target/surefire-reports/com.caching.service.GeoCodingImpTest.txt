@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.caching.service.GeoCodingImpTest
--------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.996 s - in com.caching.service.GeoCodingImpTest

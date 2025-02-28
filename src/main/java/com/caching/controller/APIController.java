@@ -15,10 +15,7 @@ public class APIController {
         this.apiService = apiService;
     }
 
-    /**
-     * Get Forward Geocoding result for the provided address.
-     * The response contains latitude and longitude.
-     */
+  
     @GetMapping("/geocoding")
     public ResponseEntity<Map<String, Double>> getGeocoding(@RequestParam String address) {
 
