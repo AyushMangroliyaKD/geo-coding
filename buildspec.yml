@@ -4,16 +4,16 @@ phases:
   pre_build:
     commands:
       - echo Logging in to Amazon ECR...
-      - aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin 509399625426.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com
+      - aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin 509399625426.dkr.ecr.ap-south-1.amazonaws.com/ayush-spring-actuator
   build:
     commands:
       - echo Building the Docker image...
       - docker build -t springboot-app .
-      - docker tag springboot-app:latest 509399625426.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/springboot-app:latest
+      - docker tag springboot-app:latest 509399625426.dkr.ecr.ap-south-1.amazonaws.com/ayush-spring-actuator
   post_build:
     commands:
       - echo Pushing the Docker image...
-      - docker push 509399625426.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/springboot-app:latest
+      - docker push 509399625426.dkr.ecr.ap-south-1.amazonaws.com/ayush-spring-actuator
 
 artifacts:
   files: []
